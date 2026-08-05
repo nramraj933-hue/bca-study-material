@@ -1,0 +1,17 @@
+
+
+CREATE TABLE Salesman9 (
+    sid INT PRIMARY KEY,
+    name VARCHAR(50),
+    city VARCHAR(30),
+    commission DECIMAL(4,2)
+);
+
+INSERT INTO Salesman9 (sid, name, city, commission) VALUES
+(5001, 'Mohan Patel', 'Anand', 0.15),
+(5002, 'Nail Shah', 'Surat', 0.13),
+(5005, 'Preet Vyas', 'Ahmedabad', 0.11),
+(5006, 'Jeevan Mehta', 'Navsari', 0.14),
+(5003, 'Paul Adam', 'Nadiad', 0.12),
+(5007, 'Ramesh Patel', 'Surat', 0.13);
+SELECT * FROM Salesman;
