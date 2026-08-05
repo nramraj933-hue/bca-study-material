@@ -1,0 +1,11 @@
+create table Salesman96( 
+    sid int primary key,
+     Name char,
+     City char,
+      commission);
+insert into Salesman96 values( 5001,'Mohan Patel','Anand',0.15);
+insert into Salesman96 values( 5002,'Nail Shah','surat',0.13);
+insert into Salesman96 values( 5005,'Preet Vyas','Ahmdabad',0.11);
+insert into Salesman96 values( 5006,'Jeevan Mehta','Navsari',0.14);
+insert into Salesman96 values( 5003,'Paul Adam','Nadiad',0.12);
+insert into Salesman96 values( 5007,'Ramesh Patel','Surat',0.13);

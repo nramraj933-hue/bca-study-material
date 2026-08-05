@@ -1,0 +1,55 @@
+C:\sqlite1>sqlite3
+SQLite version 3.36.0 2021-06-18 18:36:39
+Enter ".help" for usage hints.
+Connected to a transient in-memory database.
+Use ".open FILENAME" to reopen on a persistent database.
+sqlite> .open
+sqlite> .open ramraj .db
+extra argument: ".db"
+sqlite> .open ramraj.db
+sqlite> create table student;
+Error: near ";": syntax error
+sqlite> create table student(101,'ram');
+Error: near "101": syntax error
+sqlite> create table student(1,'ram');
+Error: near "1": syntax error
+sqlite> clear screen
+   ...>
+   ...> clear screen;
+Error: near "clear": syntax error
+sqlite> create table student(eid,ename);
+sqlite> insert into student(101,'ram');
+Error: near "101": syntax error
+sqlite> insert into student(101, 'ram');
+Error: near "101": syntax error
+sqlite> insert into student values(101,'ram');
+sqlite> select * from student;
+101|ram
+sqlite> .mode csv
+sqlite> select * from student;
+101,ram
+sqlite> select * from student;
+101,ram
+sqlite> .mode box
+sqlite> select * from student;
++-------------+
+¦ eid ¦ ename ¦
++-----+-------¦
+¦ 101 ¦ ram   ¦
++-------------+
+sqlite> .mode csv
+sqlite> select * from student;
+101,ram
+sqlite> .schema student
+CREATE TABLE student(eid,ename);
+sqlite> .modee box
+Error: unknown command or invalid arguments:  "modee". Enter ".help" for help
+sqlite> .mode box
+sqlite> select * from student;
++-------------+
+¦ eid ¦ ename ¦
++-----+-------¦
+¦ 101 ¦ ram   ¦
++-------------+
+sqlite>
+

@@ -1,0 +1,84 @@
+<html>
+<head>
+    <title>NR Store</title>
+    
+</head>
+<body>
+
+    <h1>NR Store</h1>
+
+    
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#images">Image Gallery</a>
+        <a href="#shopping">Shopping</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to <strong>NR Store</strong>! Yahan aapko sabhi tarah ke trendy aur stylish kapde milenge.</p>
+    </section>
+
+   
+    <section id="about">
+        <h2>About Us</h2>
+        <p>NR Store ek premium clothing store hai. Hum best quality Men's aur Women's collections affordable prices par provide karte hain.</p>
+    </section>
+
+    
+    <section id="shopping">
+        <h2>Shopping</h2>
+
+        <h3>Men's Collection</h3>
+        
+        
+        <div class="product-card">
+            <img src="shirt.jpg" alt="Casual Shirt">
+            <h3>Casual Shirt</h3>
+            <p><strong>Price:</strong> $599</p>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+
+        <div class="product-card">
+            <img src="jeans.jpg" alt="Casual Jeans">
+            <h3>Casual Jeans</h3>
+            <p><strong>Price:</strong> $999</p>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+
+        <h3>Women's Collection</h3>
+
+        
+        <div class="product-card">
+            <img src="party.jpg" alt="Party Dress">
+            <h3>Party Dress</h3>
+            <p><strong>Price:</strong> $1999</p>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+    </section>
+
+    
+    <section id="images">
+        <h2>Image Gallery</h2>
+        <p>Hamari latest collection ki kuch jhalak:</p>
+        <img src="shirt.jpg" alt="Shirt" width="150">
+        <img src="jeans.jpg" alt="Jeans" width="150">
+        <img src="dress.jpg" alt="Dress" width="150">
+    </section>
+
+   
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Email:</strong> support@nrstore.com</p>
+        <p><strong>Phone:</strong> +91 9876543210</p>
+        <p><strong>Address:</strong> Main Market,Surat City</p>
+    </section>
+  <footer>
+        <p>&copy; 2026 NR Store. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

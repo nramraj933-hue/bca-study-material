@@ -1,0 +1,49 @@
+Microsoft Windows [Version 10.0.17763.8880]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\sqlite1>sqlite3
+SQLite version 3.36.0 2021-06-18 18:36:39
+Enter ".help" for usage hints.
+Connected to a transient in-memory database.
+Use ".open FILENAME" to reopen on a persistent database.
+sqlite> .open Sales.db
+sqlite> create table Salesman96(
+   ...>     sid int primary key,
+   ...>      Name char,
+   ...>      City char,
+   ...>       commission);
+sqlite> insert into Salesman96 values( 5001,'Mohan Patel',Anand,0.15);
+Error: no such column: Anand
+sqlite> insert into Salesman96 values( 5002,'Nail Shah',surat,0.13);
+Error: no such column: surat
+sqlite> insert into Salesman96 values( 5005,'Preet Vyas',Ahmdabad,0.11);
+Error: no such column: Ahmdabad
+sqlite> insert into Salesman96 values( 5006,'Jeevan Mehta',Navsari,0.14);
+Error: no such column: Navsari
+sqlite> insert into Salesman96 values( 5003,'Paul Adam',Nadiad,0.12);
+Error: no such column: Nadiad
+sqlite> insert into Salesman96 values( 5007,'Ramesh Patel',Surat,0.13);
+Error: no such column: Surat
+sqlite> insert into Salesman96 values( 5001,'Mohan Patel','Anand',0.15);
+sqlite> insert into Salesman96 values( 5002,'Nail Shah','surat',0.13);
+sqlite> insert into Salesman96 values( 5005,'Preet Vyas','Ahmdabad',0.11);
+sqlite> insert into Salesman96 values( 5006,'Jeevan Mehta','Navsari',0.14);
+sqlite> insert into Salesman96 values( 5003,'Paul Adam','Nadiad',0.12);
+sqlite> insert into Salesman96 values( 5007,'Ramesh Patel','Surat',0.13);
+sqlite> .made
+Error: unknown command or invalid arguments:  "made". Enter ".help" for help
+sqlite> .mode box;
+Error: mode should be one of: ascii box column csv html insert json line list markdown quote table tabs tcl
+sqlite> .mode box
+sqlite> select* from Salesman96;
++---------------------------------------------+
+¦ sid  ¦     Name     ¦   City   ¦ commission ¦
++------+--------------+----------+------------¦
+¦ 5001 ¦ Mohan Patel  ¦ Anand    ¦ 0.15       ¦
+¦ 5002 ¦ Nail Shah    ¦ surat    ¦ 0.13       ¦
+¦ 5005 ¦ Preet Vyas   ¦ Ahmdabad ¦ 0.11       ¦
+¦ 5006 ¦ Jeevan Mehta ¦ Navsari  ¦ 0.14       ¦
+¦ 5003 ¦ Paul Adam    ¦ Nadiad   ¦ 0.12       ¦
+¦ 5007 ¦ Ramesh Patel ¦ Surat    ¦ 0.13       ¦
++---------------------------------------------+
+sqlite>

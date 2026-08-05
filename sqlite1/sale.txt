@@ -1,0 +1,52 @@
+Microsoft Windows [Version 10.0.17763.9020]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\sqlite1>sqlite3
+SQLite version 3.36.0 2021-06-18 18:36:39
+Enter ".help" for usage hints.
+Connected to a transient in-memory database.
+Use ".open FILENAME" to reopen on a persistent database.
+sqlite> .open sales.db
+sqlite> select* from sales.db;
+Error: no such table: sales.db
+sqlite> select* from sales;
+Error: no such table: sales
+sqlite> .open Salesman96.db
+sqlite> select* from Salesman96;
+Error: no such table: Salesman96
+sqlite> select* from Salesman96.db;
+Error: no such table: Salesman96.db
+sqlite> open. Salesman96.db
+   ...> select* from Salesman96;
+Error: near "open": syntax error
+sqlite> select* from Salesman96;
+Error: no such table: Salesman96
+sqlite> CREATE TABLE Salesman9 (
+   ...>     sid INT PRIMARY KEY,
+   ...>     name VARCHAR(50),
+   ...>     city VARCHAR(30),
+   ...>     commission DECIMAL(4,2)
+   ...> );
+sqlite>
+sqlite> INSERT INTO Salesman9 (sid, name, city, commission) VALUES
+   ...> (5001, 'Mohan Patel', 'Anand', 0.15),
+   ...> (5002, 'Nail Shah', 'Surat', 0.13),
+   ...> (5005, 'Preet Vyas', 'Ahmedabad', 0.11),
+   ...> (5006, 'Jeevan Mehta', 'Navsari', 0.14),
+   ...> (5003, 'Paul Adam', 'Nadiad', 0.12),
+   ...> (5007, 'Ramesh Patel', 'Surat', 0.13);
+sqlite> .mode box
+sqlite> SELECT * FROM Salesman;
+Error: no such table: Salesman
+sqlite> SELECT * FROM Salesman9;
++----------------------------------------------+
+¦ sid  ¦     name     ¦   city    ¦ commission ¦
++------+--------------+-----------+------------¦
+¦ 5001 ¦ Mohan Patel  ¦ Anand     ¦ 0.15       ¦
+¦ 5002 ¦ Nail Shah    ¦ Surat     ¦ 0.13       ¦
+¦ 5005 ¦ Preet Vyas   ¦ Ahmedabad ¦ 0.11       ¦
+¦ 5006 ¦ Jeevan Mehta ¦ Navsari   ¦ 0.14       ¦
+¦ 5003 ¦ Paul Adam    ¦ Nadiad    ¦ 0.12       ¦
+¦ 5007 ¦ Ramesh Patel ¦ Surat     ¦ 0.13       ¦
++----------------------------------------------+
+sqlite>
