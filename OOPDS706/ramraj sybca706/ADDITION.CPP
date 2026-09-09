@@ -1,0 +1,30 @@
+#include<iostream.h>
+#include<conio.h>
+
+class mul
+{
+    int a,b,c;
+    public:
+    void input()
+    {
+      cout<< " ENTER THE VALUE..:";
+      cin >>a>>b;
+      }
+       void sum()
+       {
+       c=a*b;
+       }
+	void show()
+	{
+      cout<<c;
+      }
+};
+ void main()
+    {
+       clrscr();
+       mul ob;
+	   ob.input();
+       ob.sum();
+       ob.show();
+       getch();
+       }

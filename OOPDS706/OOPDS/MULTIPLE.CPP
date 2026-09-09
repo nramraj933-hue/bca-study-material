@@ -1,0 +1,57 @@
+#include<iostream.h>
+#include<conio.h>
+
+class A
+{
+      int x;
+      public:
+      A(int a)
+       {
+		cout<<"constructor class of A:"<<endl;
+		x=a;
+       }
+		void show()
+	{
+	    cout<<"x"<<endl;
+
+	}
+
+       };
+
+ class B
+ {
+      int y;
+      public:
+      B(int b)
+      {
+	  cout<<"constructor class of B:"<<endl;
+	  y=b;
+      }
+	    void show()
+      {
+	  cout<<"y"<<endl;
+      }
+ };
+
+class C: public A,public B
+   {
+    int z;
+    public:
+    C(int a,int b,int c):A(a),B(b)
+    {
+       cout<<"constructor class C:"<<endl;
+       z=c;
+    }
+    void show()
+       {
+	 A::show();
+	 B::show();
+	 cout<<"z"<<endl;
+       }
+    };
+void main()
+    clrscr();
+    C obj(15,20,30);
+    obj.show();
+    getch();
+}
